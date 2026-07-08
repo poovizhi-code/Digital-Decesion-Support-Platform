@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Schemes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>💰 Government Schemes for Oil Palm Farmers</h1>
+
+<div class="card">
+
+<h2>Available Schemes</h2>
+
+<label>Select Scheme</label>
+
+<select id="scheme">
+
+<option value="">Choose Scheme</option>
+
+<option>Oil Palm Area Expansion Scheme</option>
+
+<option>PM-KISAN</option>
+
+<option>PM Fasal Bima Yojana</option>
+
+<option>Micro Irrigation Scheme</option>
+
+<option>Farm Mechanization Scheme</option>
+
+</select>
+
+<label>Farmer ID</label>
+
+<input type="text" id="farmerId" placeholder="Enter Farmer ID">
+
+<label>Aadhaar Number</label>
+
+<input type="text" id="aadhaar" placeholder="Enter Aadhaar Number">
+
+<label>Bank Account Number</label>
+
+<input type="text" id="bank" placeholder="Enter Bank Account Number">
+
+<button onclick="applyScheme()">
+Apply for Scheme
+</button>
+
+<p id="status"></p>
+
+<br>
+
+<button onclick="location.href='farmer.html'">
+⬅ Back to Dashboard
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

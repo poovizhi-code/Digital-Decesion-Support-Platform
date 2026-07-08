@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oil Palm Farmer Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 id="title">🌴 Oil Palm Farmer Dashboard</h1>
+
+<!-- Farmer Details -->
+
+<div class="card">
+
+<h2>👨‍🌾 Farmer Information</h2>
+
+<p><b>Name :</b> <span id="farmerName"></span></p>
+
+<p><b>Village :</b> <span id="farmerVillage"></span></p>
+
+<p><b>Land Area :</b> <span id="farmerAcres"></span></p>
+
+</div>
+
+<!-- Weather -->
+
+<div class="card">
+
+<h2>🌦 Weather Recommendation</h2>
+
+<label>Select Today's Weather</label>
+
+<select id="weather">
+
+<option value="">Choose Weather</option>
+
+<option>Sunny</option>
+
+<option>Rainy</option>
+
+<option>Cloudy</option>
+
+</select>
+
+<button onclick="getRecommendation()">
+
+Get Recommendation
+
+</button>
+
+<p id="recommendation"></p>
+
+</div>
+
+<!-- Crop -->
+
+<div class="card">
+
+<h2>🌴 Crop Disease Detection</h2>
+
+<label>Upload Leaf Image</label>
+
+<input type="file" id="leafImage" accept="image/*">
+
+<br><br>
+
+<img id="preview"
+style="display:none;width:250px;border-radius:10px;">
+
+<br><br>
+
+<label>Select Disease</label>
+
+<select id="crop">
+
+<option value="">Choose Disease</option>
+
+<option>Healthy</option>
+
+<option>Yellow Leaf</option>
+
+<option>Leaf Spot</option>
+
+<option>Ganoderma Disease</option>
+
+<option>Bud Rot</option>
+
+</select>
+
+<button onclick="checkCrop()">
+
+Analyze Crop
+
+</button>
+
+<div id="cropResult"></div>
+
+</div>
+
+<!-- Yield -->
+
+<div class="card">
+
+<h2>📈 Yield Prediction</h2>
+
+<p>Click below to estimate crop yield.</p>
+
+<button onclick="predictYield()">
+
+Predict Yield
+
+</button>
+
+<p id="yieldResult"></p>
+
+</div>
+
+<!-- Government -->
+
+<div class="card">
+
+<h2>💰 Government Incentive Schemes</h2>
+
+<p>
+
+Apply for PM-KISAN, Oil Palm Mission,
+Micro Irrigation and other schemes.
+
+</p>
+
+<button onclick="location.href='incentives.html'">
+
+Apply for Scheme
+
+</button>
+
+</div>
+
+<!-- Voice -->
+
+<div class="card">
+
+<h2>🎤 Tamil Voice Assistant</h2>
+
+<p>
+
+Voice guidance for farmers.
+
+</p>
+
+<button onclick="speakTamil()">
+
+Start Voice Assistant
+
+</button>
+
+</div>
+
+<!-- Expert -->
+
+<div class="card">
+
+<h2>📞 Expert Support</h2>
+
+<p>
+
+Need agricultural assistance?
+
+</p>
+
+<button onclick="alert('Agriculture Officer Contact: +91 9876543210')">
+
+Contact Expert
+
+</button>
+
+</div>
+
+<!-- Logout -->
+
+<div class="card">
+
+<h2>🚪 Logout</h2>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

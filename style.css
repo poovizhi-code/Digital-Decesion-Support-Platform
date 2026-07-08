@@ -1,0 +1,201 @@
+/* ===========================
+   OIL PALM FARMER PLATFORM
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#dff5df,#f5fff5);
+    min-height:100vh;
+    padding:30px;
+}
+
+/* Header */
+
+h1{
+    text-align:center;
+    color:white;
+    background:#0b7a0b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:30px;
+    font-size:32px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Card */
+
+.card{
+
+    width:500px;
+
+    margin:30px auto;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+/* Card Heading */
+
+.card h2{
+
+    text-align:center;
+
+    color:#0b7a0b;
+
+    margin-bottom:25px;
+
+}
+
+/* Labels */
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+/* Inputs */
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #bbb;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    margin-bottom:15px;
+
+}
+
+/* Dropdown */
+
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #bbb;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    margin-bottom:15px;
+
+}
+
+/* Buttons */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+button:hover{
+
+    background:#0b5e35;
+
+    transform:scale(1.02);
+
+}
+
+/* Paragraph */
+
+p{
+
+    font-size:18px;
+
+    margin-top:12px;
+
+    color:#333;
+
+}
+
+/* Dashboard Cards */
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+body{
+
+padding:15px;
+
+}
+
+.card{
+
+width:95%;
+
+padding:20px;
+
+}
+
+h1{
+
+font-size:24px;
+
+}
+
+button{
+
+font-size:16px;
+
+}
+
+}

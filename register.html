@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Palm Farmer Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌴 Oil Palm Farmer Registration</h1>
+
+<div class="card">
+
+    <h2>Farmer Details</h2>
+
+    <label for="name">👨‍🌾 Farmer Name</label>
+    <input type="text" id="name" placeholder="Enter Farmer Name">
+
+    <label for="village">🏡 Village</label>
+    <input type="text" id="village" placeholder="Enter Village">
+
+    <label for="mobile">📱 Mobile Number</label>
+    <input type="tel" id="mobile" placeholder="Enter Mobile Number">
+
+    <label for="acres">🌾 Land Area (Acres)</label>
+    <input type="number" id="acres" placeholder="Enter Land Area">
+
+    <label for="trees">🌴 Number of Oil Palm Trees</label>
+    <input type="number" id="trees" placeholder="Enter Number of Trees">
+
+    <label for="soil">🌱 Soil Type</label>
+    <select id="soil">
+        <option value="">Select Soil Type</option>
+        <option>Red Soil</option>
+        <option>Black Soil</option>
+        <option>Sandy Soil</option>
+    </select>
+
+    <label for="irrigation">💧 Irrigation Method</label>
+    <select id="irrigation">
+        <option value="">Select Irrigation</option>
+        <option>Drip Irrigation</option>
+        <option>Sprinkler Irrigation</option>
+        <option>Manual Irrigation</option>
+    </select>
+
+    <button onclick="saveDetails()">
+        ✅ Register & Continue
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
